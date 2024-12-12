@@ -5,30 +5,22 @@ namespace Tyuiu.FilimonchukED.Sprint2.Task6.V14.Lib
     {
         public string FindDayName(int k, int d)
         {
-            d = (k - 1) % 7;
+            
+            int dayIndex = (d - 1 + (k - 1)) % 7;
 
-            switch (d)
+            
+            return dayIndex switch
             {
-                case 0:
-                    return "Понедельник";
-                case 1:
-                    return "Вторник";
-                case 2:
-                    return "Среда";
-                case 3:
-                    return "Четверг";
-                case 4:
-                    return "Пятница";
-                case 5:
-                    return "Суббота";
-                case 6:
-                    return "Воскресенье";
-                default:
-                    
-                    return "Неверный день";
-            }
-
-            d = k;
+                0 => "Понедельник",
+                1 => "Вторник",
+                2 => "Среда",
+                3 => "Четверг",
+                4 => "Пятница",
+                5 => "Суббота",
+                6 => "Воскресенье",
+                _ => "Неверный день"
+            };
         }
+
     }
 }

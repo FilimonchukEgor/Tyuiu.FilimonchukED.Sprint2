@@ -25,7 +25,8 @@ namespace Tyuiu.FilimonchukED.Sprint2.Task6.V14
             int x; int d;
             Console.WriteLine("Введите день: ");
             x = Convert.ToInt32(Console.ReadLine());
-            d = x;
+            Console.WriteLine("Введите с какого дня начнется новый год: ");
+            d = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
